@@ -1,0 +1,253 @@
+{{extend 'layout2.html'}}
+<html>
+    <head>
+       
+        <script>
+
+	$('#myModal').modal()
+
+        </script>
+<style>
+    .PageForm tr td{
+        font-weight:bold;
+        font-size:16px;
+        
+        }
+        
+  
+        </style>
+    </head>
+
+    <body>
+
+        <div class="myBody">
+            <br><br/>
+            <center><h3 style="margin:auto;color:#08686B"> Passenger Details </h3></center>
+         
+    <div><center>{{=form1.custom.begin}}
+{{if (int(request.vars.seats))>=1:}} 
+        <table class="PageForm">
+            <tr><td>Passenger 1</td></tr>
+          <tr>  <td><b>Title</b></td> <td><b>Name</b></td>
+            </tr>
+            <tr>
+                <td>{{=form1.custom.widget.Title1}}</td><td>{{=form1.custom.widget.Name1}}</td>
+
+
+            </tr>
+            <tr>
+            <td>Gender
+                </td>
+                <td>
+                    Age
+                </td></tr>
+            <tr>
+                <td>{{=form1.custom.widget.Gender1}}
+                </td>
+                <td>{{=form1.custom.widget.age1}}
+                </td>
+            </tr>
+            <tr>
+                <td>DOB
+                </td>
+                  <td>
+                      Address
+                </td></tr><tr>
+                <td>{{=form1.custom.widget.dob1}}
+                </td><td>{{=form1.custom.widget.Address1}}
+                </td>
+
+            </tr>
+        </table>
+        {{pass}}
+{{if (int(request.vars.seats))>=2:}} 
+        <table class="PageForm">
+            <tr><td>Passenger 2</td></tr>
+            <tr><td><b>Title</b></td> <td><b>Name</b></td>
+            </tr>
+            <tr>
+                <td>{{=form2.custom.widget.Title2}}</td><td>{{=form2.custom.widget.Name2}}</td>
+
+
+            </tr>
+            <tr>
+            <td>Gender
+                </td>
+                <td>
+                    Age
+                </td></tr>
+            <tr>
+                <td>{{=form2.custom.widget.Gender2}}
+                </td>
+                <td>{{=form2.custom.widget.age2}}
+                </td>
+            </tr>
+            <tr>
+                <td>DOB
+                </td>
+                  <td>
+                      Address
+                </td></tr><tr>
+                <td>{{=form2.custom.widget.dob2}}
+                </td><td>{{=form2.custom.widget.Address2}}
+                </td>
+
+            </tr>
+        </table>
+    {{pass}}
+{{if (int(request.vars.seats))>=3:}} 
+        <table class="PageForm">
+            <tr><td>Passenger 3</td></tr>
+            <tr><td><b>Title</b></td> <td><b>Name</b></td>
+            </tr>
+            <tr>
+                <td>{{=form3.custom.widget.Title3}}</td><td>{{=form3.custom.widget.Name3}}</td>
+
+
+            </tr>
+            <tr>
+            <td>Gender
+                </td>
+                <td>
+                    Age
+                </td></tr>
+            <tr>
+                <td>{{=form3.custom.widget.Gender3}}
+                </td>
+                <td>{{=form3.custom.widget.age3}}
+                </td>
+            </tr>
+            <tr>
+                <td>DOB
+                </td>
+                  <td>
+                      Address
+                </td></tr><tr>
+                <td>{{=form3.custom.widget.dob3}}
+                </td><td>{{=form3.custom.widget.Address3}}
+                </td>
+
+            </tr>
+        </table>
+        {{pass}}
+{{if (int(request.vars.seats))>=4:}} 
+        <table class="PageForm">
+            <tr><td>Passenger 4</td></tr>
+            <tr><td><b>Title</b></td> <td><b>Name</b></td>
+            </tr>
+            <tr>
+                <td>{{=form4.custom.widget.Title4}}</td><td>{{=form4.custom.widget.Name4}}</td>
+
+
+            </tr>
+            <tr>
+            <td>Gender
+                </td>
+                <td>
+                    Age
+                </td></tr>
+            <tr>
+                <td>{{=form4.custom.widget.Gender4}}
+                </td>
+                <td>{{=form4.custom.widget.age4}}
+                </td>
+            </tr>
+            <tr>
+                <td>DOB
+                </td>
+                  <td>
+                      Address
+                </td></tr><tr>
+                <td>{{=form4.custom.widget.dob4}}
+                </td><td>{{=form4.custom.widget.Address4}}
+                </td>
+
+            </tr>
+        </table>
+        {{pass}}
+        {{if (int(request.vars.seats))>=5:}} 
+        <table class="PageForm">
+            <tr><td>Passenger 5</td></tr>
+           <tr> <td><b>Title</b></td> <td><b>Name</b></td>
+            </tr>
+            <tr>
+                <td>{{=form5.custom.widget.Title5}}</td><td>{{=form5.custom.widget.Name5}}</td>
+
+
+            </tr>
+            <tr>
+            <td>Gender
+                </td>
+                <td>
+                    Age
+                </td></tr>
+            <tr>
+                <td>{{=form5.custom.widget.Gender5}}
+                </td>
+                <td>{{=form5.custom.widget.age5}}
+                </td>
+            </tr>
+            <tr>
+                <td>DOB
+                </td>
+                  <td>
+                      Address
+                </td></tr><tr>
+                <td>{{=form5.custom.widget.dob5}}
+                </td><td>{{=form5.custom.widget.Address5}}
+                </td>
+
+            </tr>
+        </table>
+        {{pass}}
+{{if (int(request.vars.seats))>=6:}} 
+        <table class="PageForm">
+            <tr><td>Passenger 6</td></tr>
+            <tr><td><b>Title</b></td> <td><b>Name</b></td>
+            </tr>
+            <tr>
+                <td>{{=form6.custom.widget.Title6}}</td><td>{{=form6.custom.widget.Name6}}</td>
+
+
+            </tr>
+            <tr>
+            <td>Gender
+                </td>
+                <td>
+                    Age
+                </td></tr>
+            <tr>
+                <td>{{=form6.custom.widget.Gender6}}
+                </td>
+                <td>{{=form6.custom.widget.age6}}
+                </td>
+            </tr>
+            <tr>
+                <td>DOB
+                </td>
+                  <td>
+                      Address
+                </td></tr><tr>
+                <td>{{=form6.custom.widget.dob6}}
+                </td><td>{{=form6.custom.widget.Address6}}
+                </td>
+
+            </tr>
+        </table>
+        {{pass}}
+        </center>
+            </div>
+        </tr>
+    </body>
+    {{pass}}
+<center>
+<!--<a href="{{=URL(f='confirm',vars=dict(lis=request.vars.lis,dtime=request.vars.dtime,atime=request.vars.atime,seats=request.vars.seats,price=request.vars.price,send=request.vars.send,src=request.vars.src,dest=request.vars.dest,cl=request.vars.cl,passengers=request.vars.Name1))}}"><button type="button" ></button></a>-->
+    {{=form1.custom.submit}}
+        {{=form1.custom.end}}
+</center>
+
+
+</div>
+
+        
+    </html>

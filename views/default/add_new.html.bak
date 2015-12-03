@@ -1,0 +1,5 @@
+{{extend 'layout2.html'}}
+<h3>Trips Details</h3>
+{{=tripDetails}}
+<h4>Add new trips</h4>
+{{=form}}

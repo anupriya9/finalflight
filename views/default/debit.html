@@ -1,0 +1,102 @@
+<html>
+    <head>
+       
+        <script>
+
+	$('#myModal').modal()
+
+        </script>
+<style>
+    .PageForm tr td{
+        font-weight:bold;
+        font-size:16px;
+        
+        }
+        
+  
+        </style>
+    </head>
+
+    <body>
+
+        <div class="myBody">
+            <br><br/>
+            <center><h3 style="margin:auto;color:blue">Total Amount <b>{{=request.vars.price}}</b></h3></center>
+            <center><h3 style="margin:auto;color:#08686B"> Payment Mode :Debit Card </h3></center>
+          
+<div><center>{{=form.custom.begin}}
+    <table class="PageForm">
+        <tr>
+            <td><b>Select Bank</b></td>
+        </tr>
+        <tr>
+            <td>{{=form.custom.widget.Bank}}
+        </tr>
+    <tr>
+        <td><b>Card Number</b></td> 
+    </tr>
+        <tr>
+            <td>{{=form.custom.widget.CardNumber}}</td>
+        </tr>
+       <tr>
+           
+                   <td><b>CardHolder Name</b></td>
+            </tr>
+         <tr>
+            <td>{{=form.custom.widget.CardHolderName}}</td>
+       <tr>
+        <td><b>Expiry Date</b></td> 
+    </tr>
+        </tr>
+    
+        <tr>
+        <td>Month
+            </td>
+            <td>
+                Year
+            </td></tr>
+        <tr>
+            <td>{{=form.custom.widget.Month}}
+            </td>
+            <td>{{=form.custom.widget.Year}}
+            </td>
+        </tr>
+        <tr>
+            <td>Cvv Number
+            </td>
+            </tr><tr>
+            <td>{{=form.custom.widget.cvv}}
+            </td>
+            
+        </tr>
+    
+    </table>
+     
+    {{=form.custom.end}}
+    </center>
+</div>
+
+
+<!--<a href="#myModal" role="button" class="btn btn-info" data-toggle="modal" style=>Search for a Trip</a>
+ 
+ Modal 
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="myModalLabel">Travel Details</h3>
+</div>
+<div class="modal-body">
+<p>{{=form}}</p>
+</div>
+<div class="modal-footer">
+<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+
+</div>
+</div>-->
+         
+           
+        </div>
+    {{pass}}
+
+    </body>
+</html>

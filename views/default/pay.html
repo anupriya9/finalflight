@@ -1,0 +1,61 @@
+{{extend 'layout2.html'}}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Payment</title>
+        <style type="text/css">
+  body {
+  padding-left: 11em;
+  font-family: Georgia, "Times New Roman",
+        Times, serif;
+   }
+iframe
+{
+float:right;
+}
+ul.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+float: left;
+  position: absolute;
+  top: 11em;
+  left: 1em;
+  width: 8em }
+ul.navbar li {
+  background: white;
+  margin: 0.5em 0;
+  padding: 0.3em;
+  border-right: thin dotted }
+ul.navbar a {
+color: blue;
+  text-decoration: none }
+a:link {
+  color: red }
+a:visited {
+  color: red }
+
+  </style>
+</head>
+<body>
+
+
+<iframe id="iframe" width="1100" height="300" src="{{=URL('credit')}}" name="{{=URL('pay')}}"></iframe>
+
+<!-- Site navigation menu -->
+<ul class="navbar">
+  <li><a href="{{=URL(f='credit',vars=dict(lis=request.vars.lis,dtime=request.vars.dtime,atime=request.vars.atime,seats=request.vars.seats,price=request.vars.price,send=request.vars.send,src=request.vars.src,dest=request.vars.dest,cl=request.vars.cl))}}" target="{{=URL('pay')}}">Credit card</a>
+  <li><a href="{{=URL(f='debit',vars=dict(lis=request.vars.lis,dtime=request.vars.dtime,atime=request.vars.atime,seats=request.vars.seats,price=request.vars.price,send=request.vars.send,src=request.vars.src,dest=request.vars.dest,cl=request.vars.cl))}}" target="{{=URL('pay')}}">Debit card</a>
+  <li><a href="{{=URL('wallet')}}" target="{{=URL('pay')}}">Wallet</a>
+  <li><a href="{{=URL('help')}}" target="{{=URL('pay')}}">Help</a>
+    </li>
+    </ul>
+<center><a href="{{=URL(f='book',vars=dict(lis=request.vars.lis,dtime=request.vars.dtime,atime=request.vars.atime,seats=request.vars.seats,price=request.vars.price,send=request.vars.send,src=request.vars.src,dest=request.vars.dest,cl=request.vars.cl))}}"><button type="button" >Submit</button></a></center>
+
+</body>
+    
+
+
+</html>

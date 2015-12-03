@@ -1,0 +1,83 @@
+<html>
+    <head>
+       
+        <script>
+
+	$('#myModal').modal()
+
+        </script>
+<style>
+    .PageForm tr td{
+        font-weight:bold;
+        font-size:16px;
+        
+        }
+        
+  
+        </style>
+    </head>
+
+    <body>
+
+        <div class="myBody">
+            <br><br/>
+            <center><h3 style="margin:auto;color:blue">Total Amount <b>{{=request.vars.price}}</b> </h3></center>
+            <center><h3 style="margin:auto;color:#08686B"> Payment Mode :Credit Card </h3></center>
+
+<-- {{if form.errors:}}
+ {{=form.errors.card_number}}
+ {{pass}}  </-->
+<div><center>{{=form.custom.begin}}
+    <table class="PageForm">
+    <tr>
+
+        <td><b>Card Number</b></td>
+   
+    </tr>
+        <tr>
+            <td>{{=form.custom.widget.CardNumber}}</td>
+        </tr>
+       <tr>
+           
+                   <td><b>CardHolder Name</b></td>
+            </tr>
+         <tr>
+            <td>{{=form.custom.widget.CardHolderName}}</td>
+       <tr>
+        <td><b>Expiry Date</b></td> 
+    </tr>
+        </tr>
+    
+        <tr>
+        <td>Month
+            </td>
+            <td>
+                Year
+            </td></tr>
+        <tr>
+            <td>{{=form.custom.widget.Month}}
+            </td>
+            <td>{{=form.custom.widget.Year}}
+            </td>
+        </tr>
+        <tr>
+            <td>Cvv Number
+            </td>
+            </tr><tr>
+            <td>{{=form.custom.widget.cvv}}
+            </td>
+
+        </tr>
+    
+    </table>
+   
+      
+    {{=form.custom.end}}
+    </center>
+</div>
+
+        </div>
+    {{pass}}
+
+    </body>
+</html>

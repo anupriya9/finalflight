@@ -1,0 +1,4 @@
+{{extend 'layout2.html'}}
+<h1>Need Help?</h1>
+
+<h4>MyWallet is a quick & handy way to manage your booking refunds. Next time you cancel a booking, transfer your refund amount to your MyWallet account and avail exclusive promotions. Once you have some money in your MyWallet account, use it to make payments for booking made at Flight My Book.</h4>

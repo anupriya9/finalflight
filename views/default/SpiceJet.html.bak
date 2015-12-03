@@ -1,0 +1,54 @@
+<html>
+    <head>
+       
+        <script>
+
+	$('#myModal').modal()
+
+        </script>
+<style>
+    .PageForm tr td{
+        font-weight:bold;
+        font-size:16px;
+        
+        }
+        
+  
+        </style>
+    </head>
+
+    <body>
+
+        <div class="myBody">
+            <br><br/>
+            <center><h3 style="margin:auto;color:#08686B"> Spice Jet Reviews</h3></center>
+          
+<div><center>
+    <li> Operates in an economy only layout</li>
+    <li> Hot meals can be prepurchased at time of booking; some hot meals available on board for those who have not prebooked; snacks, snack boxes and beverages available for purchase on board; some foods can be taken on board; water provided complimentary</li>
+    <li>Seat pitch of 31 to 32 inch with slight recline</li>
+    
+
+    <li>History</li>
+
+   <p>
+       Originated in 1993 when Airline Modilift was formed in partnership with Lufthansa
+    Ceased service in 1996 before being taken over and renamed Royal Airways
+    Taken over again in 2004 and the low cost carrier SpiceJet began
+    Began service as SpiceJet in May 2005
+       India's third biggest airline in terms of market share</p>
+
+    <li>Major Strengths</li>
+
+    <p>
+        Low cost fares between major centers in India</p>
+
+
+
+
+    </center>
+</div>
+        </div>
+
+    </body>
+</html>

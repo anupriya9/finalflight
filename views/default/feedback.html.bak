@@ -1,0 +1,35 @@
+{{extend 'layout2.html'}}
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    
+    
+    
+  </head>
+
+  <body>
+
+    
+<div class="container">
+    <form action="{{=URL('viewbookings')}}">
+        <div class="divider"></div>
+        <label for="comments"><b>Give feedback on your travel:</b></label>
+          <textarea cols="50" rows="8" name="comments"></textarea>
+          <input class="btn btn-submit" type="submit" value="Submit" />
+          <small>or press <strong>enter</strong></small>
+        
+      </ul>
+    </form>  
+  </div>
+</div>
+    
+    
+    
+    
+    
+  </body>
+</html>

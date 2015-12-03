@@ -1,0 +1,4 @@
+{{extend 'layout.html'}}
+<h1>Create a New Product</h1>
+{{=message}}
+{{=form}}

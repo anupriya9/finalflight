@@ -1,0 +1,2 @@
+{{extend 'layout2.html'}}
+<h3>Your Wallet is Empty</h3>

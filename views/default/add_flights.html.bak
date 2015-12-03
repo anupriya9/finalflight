@@ -1,0 +1,5 @@
+{{extend 'layout3.html'}}
+<h3>Flights Places</h3>
+{{=cities}}
+<h4>Add new flights Places</h4>
+{{=form}}
